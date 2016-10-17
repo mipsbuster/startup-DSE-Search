@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema name="autoSolrSchema" version="1.5">
+<types>
+<fieldType class="org.apache.solr.schema.StrField" name="StrField"/>
+<fieldType class="org.apache.solr.schema.TextField" name="TextField">
+<analyzer>
+<tokenizer class="solr.StandardTokenizerFactory"/>
+<filter class="solr.LowerCaseFilterFactory"/>
+</analyzer>
+</fieldType>
+</types>
+<fields>
+<field indexed="true" multiValued="false" name="title" stored="true" type="StrField"/>
+<field indexed="true" multiValued="false" name="parent" stored="true" type="StrField"/>
+<field indexed="true" multiValued="false" name="links" stored="true" type="TextField"/>
+<field indexed="true" multiValued="false" name="content" stored="true" type="TextField"/>
+<field indexed="true" multiValued="false" name="lang" stored="true" type="StrField"/>
+<field indexed="true" multiValued="true" name="category" stored="true" type="TextField"/>
+</fields>
+<uniqueKey>(title,parent,lang)</uniqueKey>
+</schema>

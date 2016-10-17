@@ -1,0 +1,47 @@
+SOLR
+
+
+simple stuff missing ????
+get version of SOLR and SEARCH version ?
+get list of all cores ?
+get detailed info on a core ?
+extract schema.xml and solconfig.xml ?
+get total document in a core ?
+
+
+
+generate latest the solrconfig.xml
+dsetool get_core_config solrdemo.wikipages current=true > soltconfig.xml
+
+generate the latest schema.xml
+dsetool get_core_schema solrdemo.wikipages current=true
+
+generate the schema.xml
+dsetool infer_solr_schema solrdemo.wikipages > schema.xml
+
+create a core
+create_core  solrdemo.wikipages generateResources=true
+
+check status of core.
+dsetool core_indexing_status solrdemo.wikipages
+
+index core
+
+reindex core
+dsetool reload_core solrdemo.wikipages reindex=true schema= solrconfig=
+
+drop core
+check document count for a core..
+
+-----
+HTTP API
+-----
+
+curl "http://node0:8983/solr/solrdemo.wikipages/select?q=title:food&fl=title"
+
+root@node0:/usr/share# curl "http://node0:8983/solr/solrdemo.wikipages/select?q=content:river&fl=title"
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+<lst name="responseHeader"><int name="status">0</int><int name="QTime">34</int></lst><result name="response" numFound="10" start="0" maxScore="0.15640202"><doc><str name="title">Denizli Province</str></doc><doc><str name="title">Denizli Province</str></doc><doc><str name="title">Denizli Province</str></doc><doc><str name="title">Denizli Province</str></doc><doc><str name="title">Denizli Province</str></doc><doc><str name="title">Treaty of Lancaster</str></doc><doc><str name="title">Treaty of Lancaster</str></doc><doc><str name="title">Treaty of Lancaster</str></doc><doc><str name="title">Treaty of Lancaster</str></doc><doc><str name="title">Treaty of Lancaster</str></doc></result>
+</response>
+
