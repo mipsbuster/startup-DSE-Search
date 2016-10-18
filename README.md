@@ -1,7 +1,5 @@
 # Startup DSE Search
 
-
-
 Goal is to create a quick start to learn the basic of DSE Search with only C* background and skill set.
 
 Verions is DSE 4.8.8
@@ -41,4 +39,36 @@ o   Retrieve faceted results
 o   Find results by geo location within x distance
 o   Average sensor data that is returned in a given query
 ```
+
+## Solution 
+
+### Ingest
+
+Develop simple python program for seeding DSE with random data from Wikipedia. Pages are loaded in a number of languages. 
+
+Ingest Process
+
+### Setup 
+
+Cluster : DSE 4.8.8. cluster running on AWS. All nodes are running C* and Search, 
+
+Client: python application and shh into cluster to execute cqlsh commands for test queries. 
+
+
+
+### DSE Search Examples
+
+Following are examples for the Use Case provided. 
+
+First pass is to provide cqlsh commands/scripts. then add the same cqlsh from a python client application. The following are links to cqlsh examples for each use case requirement
+
+Search and Retrieve results in cqlsh:
+
+- Fuzzy Searching
+- Mulit Language
+- Sort/order results
+- Filter out any common words
+- [Retrieve faceted results](../doc/SOLR-facet.md)
+- Find results by geo location within x distance
+- Averages
 
