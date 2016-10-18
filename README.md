@@ -52,9 +52,7 @@ Ingest Process
 
 Cluster : DSE 4.8.8. cluster running on AWS. All nodes are running C* and Search, 
 
-Client: python application and shh into cluster to execute cqlsh commands for test queries. 
-
-
+Client: python application and SSH into cluster to execute cqlsh commands for test queries. 
 
 ### DSE Search Examples
 
@@ -62,7 +60,7 @@ Following are examples for the Use Case provided.
 
 First pass is to provide cqlsh commands/scripts. then add the same cqlsh from a python client application. The following are links to cqlsh examples for each use case requirement
 
-Search and Retrieve results in cqlsh:
+#### Search and Retrieve results in cqlsh:
 
 - Fuzzy Searching
 - Mulit Language
@@ -71,4 +69,14 @@ Search and Retrieve results in cqlsh:
 - [Retrieve faceted results](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-facet.md)
 - Find results by geo location within x distance
 - Averages
+
+
+
+#### Other SOLR queries and Features
+
+- [JSON query](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-json.md)
+- [Counts](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-count.md)
+- [Range Search](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-range.md)
+- [Term Boosting](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-termboosting.md)
+- [Required](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-required.md)
 
