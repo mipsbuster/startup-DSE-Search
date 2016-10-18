@@ -68,7 +68,7 @@ Search and Retrieve results in cqlsh:
 - Mulit Language
 - Sort/order results
 - Filter out any common words
-- [Retrieve faceted results](doc/SOLR-facet.md)
+- [Retrieve faceted results](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-facet.md)
 - Find results by geo location within x distance
 - Averages
 
