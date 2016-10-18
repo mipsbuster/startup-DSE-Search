@@ -65,7 +65,7 @@ First pass is to provide cqlsh commands/scripts. then add the same cqlsh from a 
 - Fuzzy Searching
 - Mulit Language
 - Sort/order results
-- Filter out any common words
+- [Filter out any common words](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-stopwords.md)
 - [Retrieve faceted results](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-facet.md)
 - Find results by geo location within x distance
 - Averages
