@@ -79,4 +79,5 @@ First pass is to provide cqlsh commands/scripts. then add the same cqlsh from a 
 - [Range Search](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-range.md)
 - [Term Boosting](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-termboosting.md)
 - [Required](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-required.md)
+- [Boolean](https://github.com/mipsbuster/startup-DSE-Search/blob/master/docs/SOLR-boolean.md)
 
